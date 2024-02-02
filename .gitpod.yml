@@ -13,4 +13,4 @@ tasks:
       chmod 754 /home/gitpod/
     command: |
       cd containers/app/ghost
-      ghost install
+      ghost install local
