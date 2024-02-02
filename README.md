@@ -3,6 +3,8 @@ ghost
 
 Based on "Ghost" at https://ghost.org/
 
+Based on "Ghost: Open Source Publishing Platform with John O’Nolan" at https://www.youtube.com/watch?v=CXuPd_bq-nE
+
 ## 100 - Introduction
 
 See [README.md](./100/README.md)
