@@ -6,9 +6,11 @@
 
 tasks:
   - name: Install NodeJS v18.19.0 LTS and Ghost CLI
-    before: cd containers/app/ghost
     init: | 
       nvm install 18.19.0
       nvm use 18.19.0
       npm install -g ghost-cli
-    command: ghost install
+      chmod 754 /home/gitpod/
+    command: |
+      cd containers/app/ghost
+      ghost install
