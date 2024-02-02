@@ -4,12 +4,11 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
-image:
-  file: .gitpod.Dockerfile
-
 tasks:
   - name: Install Ghost CLI
     before: cd containers/app/ghost
     init: | 
+      nvm install 18.0.0
+      nvm use 18.0.0
       npm install -g ghost-cli
     command: ghost install
