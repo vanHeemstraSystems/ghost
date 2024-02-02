@@ -1,0 +1,8 @@
+
+tasks:
+    - name: Upgrade NPM to version 10.3.0
+      before: cd containers/app/ghost
+      init: | 
+        npm install -g npm@10.3.0
+        npm install -g ghost-cli
+      command: ghost install
